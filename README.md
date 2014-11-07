@@ -13,7 +13,7 @@
 - [提速]将css中载入的google字体文件转移到本地。
 - 增加返回顶部功能
 - 增加分享功能（仅添加了QQ，感觉其他的没什么实际用处）
-- 增加百度统计（配置中开启百度统计，并将统计代码粘贴在modernist\layout\_partial\baidu-tongji.ejs 中。注：请使用“百度统计异步代码”）原有google被好留，您也可以使用。
+- 增加百度统计（配置中开启百度统计，并将统计代码粘贴在modernist\layout\_partial\baidu-tongji.ejs 中。注：请使用“百度统计异步代码”）原有google被保留，您也可以使用。
 - 正文也评论功能继承多说。
 
 
