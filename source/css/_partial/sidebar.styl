@@ -1,0 +1,67 @@
+#sidebar
+  width 200px
+  line-height 1.8em
+  background #DEDEDE
+  border-radius 8px
+  position absolute
+  top 160px
+  left 50%
+  margin-left 350px
+  box-shadow rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.2) 0 1px 3px
+  @media screen and (max-width: 1130px)
+    position static
+    top auto
+    left auto
+    margin 15px auto 0
+    width page-width
+  @media screen and (max-width: 740px)
+    position static
+    top auto
+    left auto
+    margin 15px auto 0
+    width 100%
+    border-radius 0
+    box-shadow none
+  .widget
+    word-wrap break-word
+    .title
+      color #fff
+      padding 5px 10px
+      margin 0
+      font-size 1em
+      border-bottom 1px solid #eee
+      font-weight normal
+      background #069
+
+    .entry
+      font-size 0.9em
+      padding 13px 5px 13px 15px
+      a
+        &:hover
+          color #003175
+
+    ul, ol, dl
+      list-style none
+      padding 0
+      margin 0
+      ul, ol, dl
+        list-style disc
+        margin-left 20px
+
+  .category
+    small
+      margin-left 10px
+      color color-meta
+      &:before
+        content '('
+      &:after
+        content ')'
+    .title
+      border-radius 5px 5px 0 0
+      @media screen and (max-width: 740px)
+        border-radius 0
+
+  .tagcloud
+    a
+      margin-right 10px
+      display inline-block
