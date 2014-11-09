@@ -11,25 +11,52 @@
     color #fff
     font-style italic
 
-#gotop
+#rightfix
   position fixed
-  right 10px
+  left 50%
   bottom 10px
+  margin-left 360px
   width 45px
-  height 45px
-  border-radius 5px
-  background #1e1e1e
-  opacity 0.6
-  cursor pointer
+  z-index 999
 
-  i
+  .fix_btn
     display block
+    width 45px
+    height 45px
+    border-radius 5px
+    background #1e1e1e
+    opacity 0.6
+    cursor pointer
+    position relative
+    margin-top 3px
+
+#gotop
+  i
+    position absolute
     width 0px
     height 0px
     overflow hidden
     border 10px solid #1e1e1e
     border-bottom-color #fff
-    margin 6px 0 0 12px
+    top 6px
+    left 12px
+
+#gocomm
+  i
+    position absolute
+    width 20px
+    height 12px
+    border 2px solid #fff
+    border-left none
+    border-right none
+    top 15px
+    left 12px
+    i
+      top 5px
+      left 0
+      height auto
+      border-top 2px solid #fff
+      border-bottom none
 
 @media screen and (max-width: 740px)
   body
@@ -47,9 +74,11 @@
     width auto
     text-align left
 
-  #gotop
+  #rightfix
     right 5px
     bottom 5px
+    left auto
+    margin-left auto
 
 @media screen and (max-width:580px)
   #header

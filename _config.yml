@@ -11,6 +11,8 @@ widgets:
 - tagcloud
 - recent_posts
 
+widgets_pos_right: 
+
 share:
   enable: false
   qq: false

@@ -28,8 +28,13 @@ var duoshuoQuery = {short_name:"<%= theme.duoshuo_shortname %>"};
   })();
 </script>
 <% } %>
+<% if (theme.gotop.enable || theme.duoshuo_shortname){ %>
+<div id="rightfix" style="display:none;">
+<% if (theme.duoshuo_shortname && page.comments){ %>
+<a href="#comment" id="gocomm" class="fix_btn" title="提问/评论"><i><i></i></i></a>
+<% } %>
 <% if (theme.gotop.enable){ %>
-<div id="gotop" onclick="gotop();" style="display:none;"><i></i></div>
+<a href="javascript:void(0)" id="gotop" class="fix_btn" onclick="gotop();" title="回到顶部"><i></i></a>
 <script>
   function gotop(){
     $('html,body').animate({
@@ -37,17 +42,19 @@ var duoshuoQuery = {short_name:"<%= theme.duoshuo_shortname %>"};
       }, <%= theme.gotop.speed %>);
   }
   $(function(){
-    oGoTop = $('#gotop');
+    _rightfix = $('#rightfix');
     $(window).scroll(function(){
       $sollTop = document.documentElement.scrollTop + document.body.scrollTop;
       if($sollTop > <%= theme.gotop.soll_top %>){
-        oGoTop.show();
+        _rightfix.show();
       }else{
-        oGoTop.hide();
+        _rightfix.hide();
       }
     });
   });
 </script>
+<% } %>
+</div>
 <% } %>
 <% if (theme.fancybox){ %>
 <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">

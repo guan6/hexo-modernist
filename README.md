@@ -11,7 +11,8 @@
 - 增加 分类、标签云、最新文章 3个widgets。
 - [提速]将jquery、html5shiv CDN 更换为国内地址（原因你懂）
 - [提速]将css中载入的google字体文件转移到本地。
-- 增加返回顶部功能
+- 增加返回顶部、快速评论按钮
+- 增加是否将widgets右置选项
 - 增加分享功能（仅添加了QQ，感觉其他的没什么实际用处）
 - 增加百度统计（配置中开启百度统计，并将统计代码粘贴在modernist\layout\_partial\baidu-tongji.ejs 中。注：请使用“百度统计异步代码”）原有google被保留，您也可以使用。
 - 正文也评论功能继承多说。
@@ -53,6 +54,9 @@ widgets:
 - tagcloud
 - recent_posts
 
+# widgets right
+widgets_pos_right: true
+
 # share
 share:
   enable: false
@@ -81,6 +85,7 @@ favicon: /favicon.ico
 	- **category** - 分类
 	- **tagcloud** - 标签云
 	- **recent_posts** - 最新文章
+- **widgets_pos_right** - true 开启widgets右置，设置为空或false，widgets在底部
 - **share** - 分享
 	- **enable** - 是否开启
 	- **qq** - qq分享
